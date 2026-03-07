@@ -1,22 +1,13 @@
-# Collab Notes App
+# CollabNotes
 
-A collaborative note-taking web application built with the MERN stack.
+A collaborative note-taking web app built with the MERN stack.
 
-## Tech Stack
-- MongoDB
-- Express.js
-- React
-- Node.js
-- Tailwind CSS
-
-## Features (Planned)
-
-- JWT Authentication
+## Planned Features
+- JWT authentication
+- Rich text editor
 - Note CRUD
-- Rich Text Editor
-- Full-text Search
-- Collaborator Management
-- Soft Deletes
-- Pagination
-
-This project is being built as part of a Software Engineering Internship technical assessment.
+- Soft delete and restore
+- Full-text search
+- Collaborator management
+- Shared notes
+- Tailwind CSS UI
