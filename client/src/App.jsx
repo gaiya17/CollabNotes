@@ -9,6 +9,7 @@ import SharedNotesPage from "./pages/SharedNotesPage";
 import TrashPage from "./pages/TrashPage";
 import ProtectedRoute from "./routes/ProtectedRoute";
 import DashboardLayout from "./layouts/DashboardLayout";
+import NoteEditorPage from "./pages/NoteEditorPage";
 
 function App() {
   return (
@@ -29,6 +30,8 @@ function App() {
           >
             <Route index element={<DashboardPage />} />
             <Route path="notes" element={<NotesPage />} />
+            <Route path="notes/new" element={<NoteEditorPage />} />
+            <Route path="notes/:id" element={<NoteEditorPage />} />
             <Route path="shared" element={<SharedNotesPage />} />
             <Route path="trash" element={<TrashPage />} />
           </Route>
