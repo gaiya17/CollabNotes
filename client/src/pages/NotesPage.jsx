@@ -29,6 +29,12 @@ const NotesPage = () => {
   };
 
   const handleDelete = async (noteId) => {
+    const confirmed = window.confirm(
+      "Are you sure you want to move this note to trash?"
+    );
+
+    if (!confirmed) return;
+
     try {
       await deleteNote(noteId);
       fetchNotes();

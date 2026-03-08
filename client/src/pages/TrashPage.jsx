@@ -21,6 +21,12 @@ const TrashPage = () => {
   };
 
   const handleRestore = async (noteId) => {
+    const confirmed = window.confirm(
+      "Do you want to restore this note?"
+    );
+
+    if (!confirmed) return;
+
     try {
       await restoreNote(noteId);
       fetchTrashNotes();
