@@ -1,5 +1,17 @@
 import api from "./api";
 
+export const getNotes = async ({ search = "", page = 1, limit = 10 } = {}) => {
+  const response = await api.get("/notes", {
+    params: {
+      search,
+      page,
+      limit,
+    },
+  });
+
+  return response.data;
+};
+
 export const getMyNotes = async () => {
   const response = await api.get("/notes/mine");
   return response.data;
