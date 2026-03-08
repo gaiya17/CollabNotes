@@ -12,3 +12,19 @@ body {
   background-color: #f8fafc;
   color: #0f172a;
 }
+
+.ql-toolbar.ql-snow {
+  border: none !important;
+  border-bottom: 1px solid #cbd5e1 !important;
+}
+
+.ql-container.ql-snow {
+  border: none !important;
+  min-height: 220px;
+}
+
+.ql-editor {
+  min-height: 220px;
+  font-size: 16px;
+  color: #0f172a;
+}
