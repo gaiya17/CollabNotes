@@ -51,3 +51,13 @@ export const restoreNote = async (noteId) => {
   const response = await api.patch(`/notes/${noteId}/restore`);
   return response.data;
 };
+
+export const addCollaborator = async (noteId, email) => {
+  const response = await api.post(`/notes/${noteId}/collaborators`, { email });
+  return response.data;
+};
+
+export const removeCollaborator = async (noteId, userId) => {
+  const response = await api.delete(`/notes/${noteId}/collaborators/${userId}`);
+  return response.data;
+};
